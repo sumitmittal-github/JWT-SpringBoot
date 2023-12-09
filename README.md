@@ -20,7 +20,7 @@
 	1. https://seanwasere.com/generate-random-hex/ <br/>
 	2. https://asecuritysite.com/encryption/plain <br/>
 	3. https://www.save-editor.com/crypto/crypt_key_generator.html <br/>
-	3. http://allkeysgenerator.com <br/>
+	4. http://allkeysgenerator.com <br/>
 </p>
 <br/> <br/>
 
@@ -49,11 +49,12 @@
 	Response : 
 	"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTM0OCwiZXhwIjoxNzAyMTM3MTQ4fQ.ebIB3wZdU_l1J8WzhlsZ-BLdIvelfJKbgtrCXuL8Dw0"
 </p>
+<br/> <br/>
 
 
 
 <p>
-	API-2 : To authenticate the user <br/>
+	API-2 : To authenticate the user - <br/>
 	POST : http://localhost:8080/api/v1/auth/authenticate <br/>
 	
 	Body :
@@ -65,13 +66,15 @@
 	Response : 
 	"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTM0OCwiZXhwIjoxNzAyMTM3MTQ4fQ.ebIB3wZdU_l1J8WzhlsZ-BLdIvelfJKbgtrCXuL8Dw0"
 </p>
+<br/> <br/>
 
 
 
 <p>
-	API-3 : To access secure API <br/>
+	API-3 : To access secure API - <br/>
 	GET : http://localhost:8080/api/v1/user/hello <br/>
-	Authorization -> Bearer token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTM0OCwiZXhwIjoxNzAyMTM3MTQ4fQ.ebIB3wZdU_l1J8WzhlsZ-BLdIvelfJKbgtrCXuL8Dw0
+	
+	Authorization -> Bearer token -> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTM0OCwiZXhwIjoxNzAyMTM3MTQ4fQ.ebIB3wZdU_l1J8WzhlsZ-BLdIvelfJKbgtrCXuL8Dw0
 
 	Response : 
 	Hello from secured end point
