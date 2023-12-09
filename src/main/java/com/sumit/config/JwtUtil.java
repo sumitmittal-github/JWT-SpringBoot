@@ -47,8 +47,6 @@ public class JwtUtil {
 
 
 
-
-
     private <T> T extractClaim(String token, Function<Claims, T> claimsResolver){
         final Claims claims = readTokenPayload(token);
         return claimsResolver.apply(claims);
