@@ -55,7 +55,7 @@
 
 <p>
 	API-2 : To authenticate the user - <br/>
-	POST : http://localhost:8080/api/v1/auth/authenticate <br/>
+	POST : http://localhost:8080/api/v1/auth/authenticate
 	
 	Body :
 	{
@@ -72,7 +72,7 @@
 
 <p>
 	API-3 : To access secure API - <br/>
-	GET : http://localhost:8080/api/v1/user/hello <br/>
+	GET : http://localhost:8080/api/v1/user/hello
 	
 	Authorization -> Bearer token -> eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTM0OCwiZXhwIjoxNzAyMTM3MTQ4fQ.ebIB3wZdU_l1J8WzhlsZ-BLdIvelfJKbgtrCXuL8Dw0
 
