@@ -11,7 +11,8 @@
 	1. Add chrome extension :	ReqBin HTTP Client (https://reqbin.com/)  <br/>
 	2. Add chrome extension :	Talend API Tester - Free Edition <br/>
 </p>
-
+<br/> <br/>
+ 
 
 
 <p>
@@ -21,17 +22,19 @@
 	3. https://www.save-editor.com/crypto/crypt_key_generator.html <br/>
 	3. http://allkeysgenerator.com <br/>
 </p>
+<br/> <br/>
 
 
 
 <p>
-	verify this JWT Token from - 	https://jwt.io/
+	verify this JWT Token from - 	https://jwt.io/ <br/> <br/>
 </p>
+<br/> <br/>
 
 
 
 <p>
-	API-1 : To register the user in DB -
+	API-1 : To register the user in DB - <br/>
 	POST : http://localhost:8080/api/v1/auth/register
 
 	Body : 
@@ -50,8 +53,10 @@
 
 
 <p>
-	API-2 : To authenticate the user
-	POST : http://localhost:8080/api/v1/auth/authenticate
+	API-2 : To authenticate the user <br/>
+	POST : http://localhost:8080/api/v1/auth/authenticate <br/>
+	
+	Body :
 	{
 	  "username": "sumit",
 	  "password": "password"
@@ -64,11 +69,11 @@
 
 
 <p>
-	API-3 : To access secure API
-	GET : http://localhost:8080/api/v1/user/hello
+	API-3 : To access secure API <br/>
+	GET : http://localhost:8080/api/v1/user/hello <br/>
 	Authorization -> Bearer token : eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTM0OCwiZXhwIjoxNzAyMTM3MTQ4fQ.ebIB3wZdU_l1J8WzhlsZ-BLdIvelfJKbgtrCXuL8Dw0
 
-
-	eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdW1pdCIsImlhdCI6MTcwMjEzNTQ3MSwiZXhwIjoxNzAyMTM3MjcxfQ.TR9ZcMxXrS3nVVEdpvJG7RHvqMxb_dO40puVOfgQmJQ
+	Response : 
+	Hello from secured end point
 </p>
 
