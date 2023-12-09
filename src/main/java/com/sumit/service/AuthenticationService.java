@@ -1,6 +1,6 @@
 package com.sumit.service;
 
-import com.sumit.config.JwtService;
+import com.sumit.config.JwtUtil;
 import com.sumit.dto.AuthenticationRequest;
 import com.sumit.dto.AuthenticationResponse;
 import com.sumit.dto.RegisterRequest;
@@ -13,6 +13,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+
 @Service
 public class AuthenticationService {
 
@@ -23,7 +25,7 @@ public class AuthenticationService {
     private PasswordEncoder passwordEncoder;
 
     @Autowired
-    private JwtService jwtService;
+    private JwtUtil jwtUtil;
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -38,7 +40,7 @@ public class AuthenticationService {
         userRepository.save(user);
 
         // generate new token
-        String token = jwtService.generateToken(user);
+        String token = jwtUtil.generateToken(user, new HashMap<>());
 
         return new AuthenticationResponse(token);
     }
@@ -51,7 +53,7 @@ public class AuthenticationService {
         User user = userRepository.findByUsername(request.getUsername()).orElseThrow();
 
         // generate new token
-        String token = jwtService.generateToken(user);
+        String token = jwtUtil.generateToken(user, new HashMap<>());
         return new AuthenticationResponse(token);
     }
 
